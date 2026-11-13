@@ -218,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Project ---
+# Raw data: the Kaggle PM2.5 file is downloaded by each user (see README).
+# The Open-Meteo weather file is CC BY 4.0 and is committed for reproducibility.
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/open_meteo_hanoi_daily_2016_2020.csv
+
+# LaTeX build files (keep main.pdf)
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.synctex.gz
+
+# Power BI local cache
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# OS
+.DS_Store
+Thumbs.db
